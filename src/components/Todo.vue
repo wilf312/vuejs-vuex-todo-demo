@@ -2,15 +2,21 @@
   <li
     :class="{'isDone': todoDone }"
     v-text="todoText"
-  />
+  ></li>
 </template>
 
 <script>
 export default {
-  props: [
-    'todoText',
-    'todoDone'
-  ]
+  props: {
+    todoText: {
+      type: String,
+      required: true
+    },
+    todoDone: {
+      type: Boolean,
+      default: false
+    }
+  }
 }
 </script>
 

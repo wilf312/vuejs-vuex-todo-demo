@@ -2,11 +2,12 @@
   <div>
     <p>リスト</p>
     <ul>
-      <todo
-        v-for="todo in todoList"
+      <Todo
+        v-for="(todo, index) in todoList"
+        :key="index"
         :todo-text="todo.text"
         :todo-done="todo.done"
-      />
+      ></Todo>
       <!-- <li :class="{'isDone': todo.done}">{{todo.text}}</li> -->
     </ul>
   </div>

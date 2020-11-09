@@ -1,8 +1,8 @@
 <template>
   <div>
     <h1>Todo list</h1>
-    <Display />
-    <text-form />
+    <Display></Display>
+    <TextForm></TextForm>
   </div>
 </template>
 

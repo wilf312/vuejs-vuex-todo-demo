@@ -13,16 +13,17 @@ module.exports = {
     filename: '[name].js'
   },
   resolve: {
-    extensions: ['', '.js', '.vue'],
-    fallback: [path.join(__dirname, '../node_modules')],
+    extensions: ['.js', '.vue'],
+
+    modules: [
+      path.join(__dirname, '../node_modules')
+    ],
+    // fallback: [path.join(__dirname, '../node_modules')],
     alias: {
       'src': path.resolve(__dirname, '../src'),
       'assets': path.resolve(__dirname, '../src/assets'),
       'components': path.resolve(__dirname, '../src/components')
     }
-  },
-  resolveLoader: {
-    fallback: [path.join(__dirname, '../node_modules')]
   },
   module: {
     preLoaders: [

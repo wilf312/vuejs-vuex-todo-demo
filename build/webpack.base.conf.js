@@ -78,10 +78,10 @@ module.exports = {
       }
     ]
   },
-  eslint: {
-    formatter: require('eslint-friendly-formatter')
-  },
-  vue: {
-    loaders: utils.cssLoaders()
-  }
+  // eslint: {
+  //   formatter: require('eslint-friendly-formatter')
+  // },
+  // vue: {
+  //   loaders: utils.cssLoaders()
+  // }
 }

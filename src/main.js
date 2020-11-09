@@ -1,12 +1,10 @@
 import Vue from 'vue'
-import app from './App.vue'
+import App from './App.vue'
 import store from './store/store' // import the store we just created
 
 /* eslint-disable no-new */
 new Vue({
-  el: 'body',
-  components: {
-    app
-  },
+  el: '#app',
+  render: h => h(App),
   store
 })

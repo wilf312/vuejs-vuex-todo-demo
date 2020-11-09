@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import app from './app.vue'
+import app from './App.vue'
 import store from './store/store' // import the store we just created
 
 /* eslint-disable no-new */

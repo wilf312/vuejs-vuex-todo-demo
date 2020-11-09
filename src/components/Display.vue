@@ -2,7 +2,11 @@
   <div>
     <p>リスト</p>
     <ul>
-      <todo v-for="todo in todoList" :todo-text="todo.text" :todo-done="todo.done"></todo>
+      <todo
+        v-for="todo in todoList"
+        :todo-text="todo.text"
+        :todo-done="todo.done"
+      />
       <!-- <li :class="{'isDone': todo.done}">{{todo.text}}</li> -->
     </ul>
   </div>
@@ -23,7 +27,6 @@ export default {
   }
 }
 </script>
-
 
 <style>
 </style>

@@ -1,5 +1,8 @@
 <template>
-  <li v-text="todoText" :class="{'isDone': todoDone }"></li>
+  <li
+    :class="{'isDone': todoDone }"
+    v-text="todoText"
+  />
 </template>
 
 <script>

@@ -4,7 +4,10 @@ module.exports = {
     sourceType: 'module'
   },
   // https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style
-  extends: 'standard',
+  extends: [
+    'plugin:vue/recommended',
+    'standard'
+  ],
   // required to lint *.vue files
   plugins: [
     'html'

@@ -1,13 +1,23 @@
 <template>
-  <li
-    :class="{'isDone': todoDone }"
-    v-text="todoText"
-  ></li>
+  <li :class="{'isDone': todoDone }">
+    <label>
+      <input
+        type="checkbox"
+        :checked="todoDone"
+        @change="onChange"
+      >
+      {{ todoText }}
+    </label>
+  </li>
 </template>
 
 <script>
 export default {
   props: {
+    id: {
+      type: Number,
+      required: true
+    },
     todoText: {
       type: String,
       required: true
@@ -15,6 +25,14 @@ export default {
     todoDone: {
       type: Boolean,
       default: false
+    }
+  },
+  methods: {
+    onChange () {
+      this.$emit('onChange', {
+        id: this.id,
+        done: !this.todoDone
+      })
     }
   }
 }

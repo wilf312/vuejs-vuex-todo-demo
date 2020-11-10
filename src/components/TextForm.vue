@@ -18,7 +18,6 @@ export default {
     ...mapActions(['addTodo']),
     tryAddTodo (e) {
       const text = e.target.value
-      console.log(text)
       if (text.trim()) {
         this.addTodo(text)
       }

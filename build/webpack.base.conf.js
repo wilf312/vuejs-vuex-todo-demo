@@ -3,6 +3,7 @@ const config = require('../config')
 const utils = require('./utils')
 const projectRoot = path.resolve(__dirname, '../')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: {
@@ -51,6 +52,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
+          MiniCssExtractPlugin.loader,
           'vue-style-loader',
           'css-loader'
         ]
@@ -90,7 +92,10 @@ module.exports = {
 
   plugins: [
     // https://vue-loader.vuejs.org/guide/#manual-setup
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+
+    // https://github.com/webpack-contrib/mini-css-extract-plugin
+    new MiniCssExtractPlugin(),
   ]
   // eslint: {
   //   formatter: require('eslint-friendly-formatter')

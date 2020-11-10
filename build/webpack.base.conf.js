@@ -20,7 +20,6 @@ module.exports = {
     modules: [
       path.join(__dirname, '../node_modules')
     ],
-    // fallback: [path.join(__dirname, '../node_modules')],
     alias: {
       'src': path.resolve(__dirname, '../src'),
       'assets': path.resolve(__dirname, '../src/assets'),
@@ -97,10 +96,4 @@ module.exports = {
     // https://github.com/webpack-contrib/mini-css-extract-plugin
     new MiniCssExtractPlugin(),
   ]
-  // eslint: {
-  //   formatter: require('eslint-friendly-formatter')
-  // },
-  // vue: {
-  //   loaders: utils.cssLoaders()
-  // }
 }

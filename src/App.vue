@@ -2,7 +2,7 @@
   <div>
     <h1>Todo list</h1>
     <Display></Display>
-    <text-form></text-form>
+    <TextForm></TextForm>
   </div>
 </template>
 

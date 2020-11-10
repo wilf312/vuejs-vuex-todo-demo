@@ -2,28 +2,32 @@
   <div>
     <p>リスト</p>
     <ul>
-      <todo v-for="todo in todoList" :todo-text="todo.text" :todo-done="todo.done"></todo>
-      <!-- <li :class="{'isDone': todo.done}">{{todo.text}}</li> -->
+      <Todo
+        v-for="(todo, index) in todos"
+        :id="todo.id"
+        :key="index"
+        :todo-text="todo.text"
+        :todo-done="todo.done"
+        @onChange="toggleTodo"
+      ></Todo>
     </ul>
   </div>
 </template>
 
 <script>
-import { getTodos } from '../store/getters'
-
+import {mapState, mapActions} from 'vuex'
 import Todo from './Todo.vue'
 
 export default {
   components: { Todo },
-  vuex: {
-    getters: {
-      // note that you're passing the function itself, and not the value 'getCount()'
-      todoList: getTodos
-    }
-  }
+  computed: {
+    ...mapState(['todos'])
+  },
+  methods: {
+    ...mapActions(['toggleTodo'])
+  },
 }
 </script>
-
 
 <style>
 </style>

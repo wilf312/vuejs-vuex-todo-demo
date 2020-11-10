@@ -1,26 +1,23 @@
 <template>
   <div>
     <h2>todo 追加</h2>
-    <input type="text"
+    <input
+      type="text"
       autofocus
       autocomplete="off"
-      @keyup.enter="tryAddTodo">
+      @keyup.enter="tryAddTodo"
+    >
   </div>
 </template>
 
 <script>
-import { addTodo } from '../store/actions'
+import {mapActions} from 'vuex'
 
 export default {
-  vuex: {
-    actions: {
-      addTodo: addTodo
-    }
-  },
   methods: {
+    ...mapActions(['addTodo']),
     tryAddTodo (e) {
-      var text = e.target.value
-      console.log(text)
+      const text = e.target.value
       if (text.trim()) {
         this.addTodo(text)
       }

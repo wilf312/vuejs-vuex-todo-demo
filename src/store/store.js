@@ -8,9 +8,10 @@ Vue.use(Vuex)
 // the app starts up
 const state = {
   // When the app starts, count is set to 0
-  count: 0,
+  count: 2,
   todos: [
     {
+      id: 1,
       text: 'first ',
       done: true
     }
@@ -29,10 +30,24 @@ const mutations = {
   },
   ADD_TODO (state, text) {
     const todo = {
+      id: state.count,
       text: text,
       done: false
     }
     state.todos.unshift(todo)
+    state.count = state.count + 1
+  },
+  TOGGLE_TODO (state, payload) {
+    state.todos = state.todos.map(d => {
+      if (payload.id === d.id) {
+        return {
+          ...d,
+          done: payload.done
+        }
+      } else {
+        return d
+      }
+    })
   }
 }
 
@@ -40,5 +55,19 @@ const mutations = {
 // This store can be linked to our app.
 export default new Vuex.Store({
   state,
-  mutations
+  mutations,
+  getters: {
+    getTodos (state) {
+      return state.todos
+    }
+  },
+
+  actions: {
+    addTodo (ctx, payload) {
+      ctx.commit('ADD_TODO', payload)
+    },
+    toggleTodo(ctx, payload) {
+      ctx.commit('TOGGLE_TODO', payload)
+    }
+  }
 })

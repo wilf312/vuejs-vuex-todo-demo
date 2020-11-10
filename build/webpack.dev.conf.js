@@ -12,9 +12,6 @@ Object.keys(baseWebpackConfig.entry).forEach(function (name) {
 
 module.exports = merge(baseWebpackConfig, {
   mode: 'development',
-  // module: {
-  //   rules: utils.styleLoaders()
-  // },
   // eval-source-map is faster for development
   devtool: 'eval-source-map',
   plugins: [

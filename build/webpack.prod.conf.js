@@ -10,9 +10,6 @@ const env = process.env.NODE_ENV === 'testing'
 
 var webpackConfig = merge(baseWebpackConfig, {
   mode: 'production',
-  module: {
-    // rules: utils.styleLoaders({ sourceMap: config.build.productionSourceMap, extract: true })
-  },
   devtool: config.build.productionSourceMap ? 'inline-source-map' : false,
   output: {
     path: config.build.assetsRoot,

@@ -27,6 +27,9 @@ module.exports = {
       },
     ],
 
+    // イベント名にkebab必須の必要性を感じなかった
+    'vue/custom-event-name-casing': 0,
+
     // allow paren-less arrow functions
     'arrow-parens': 0,
     // allow debugger during development

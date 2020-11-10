@@ -40,5 +40,16 @@ const mutations = {
 // This store can be linked to our app.
 export default new Vuex.Store({
   state,
-  mutations
+  mutations,
+  getters: {
+    getTodos (state) {
+      return state.todos
+    }
+  },
+
+  actions: {
+    addTodo (ctx, payload) {
+      ctx.commit('ADD_TODO', payload)
+    }
+  }
 })

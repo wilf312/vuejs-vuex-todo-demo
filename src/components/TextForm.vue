@@ -11,15 +11,11 @@
 </template>
 
 <script>
-import { addTodo } from '../store/actions'
+import {mapActions} from 'vuex'
 
 export default {
-  vuex: {
-    actions: {
-      addTodo: addTodo
-    }
-  },
   methods: {
+    ...mapActions(['addTodo']),
     tryAddTodo (e) {
       const text = e.target.value
       console.log(text)

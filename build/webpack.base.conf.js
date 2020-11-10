@@ -2,6 +2,7 @@ const path = require('path')
 const config = require('../config')
 const utils = require('./utils')
 const projectRoot = path.resolve(__dirname, '../')
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {
   entry: {
@@ -48,6 +49,13 @@ module.exports = {
         loader: 'vue-loader'
       },
       {
+        test: /\.css$/,
+        use: [
+          'vue-style-loader',
+          'css-loader'
+        ]
+      },
+      {
         test: /\.js$/,
         loader: 'babel-loader',
         include: projectRoot,
@@ -79,6 +87,11 @@ module.exports = {
       }
     ]
   },
+
+  plugins: [
+    // https://vue-loader.vuejs.org/guide/#manual-setup
+    new VueLoaderPlugin()
+  ]
   // eslint: {
   //   formatter: require('eslint-friendly-formatter')
   // },

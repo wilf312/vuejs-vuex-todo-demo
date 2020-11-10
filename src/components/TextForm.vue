@@ -3,6 +3,7 @@
     <h2>todo 追加</h2>
     <input
       type="text"
+      name="add_todo"
       autofocus
       autocomplete="off"
       @keyup.enter="tryAddTodo"

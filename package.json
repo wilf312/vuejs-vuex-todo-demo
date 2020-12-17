@@ -46,7 +46,7 @@
     "url-loader": "4.1.1",
     "vue-hot-reload-api": "2.3.4",
     "vue-html-loader": "1.2.4",
-    "vue-loader": "15.9.5",
+    "vue-loader": "16.1.2",
     "vue-style-loader": "4.1.2",
     "vue-template-compiler": "2.6.12",
     "webpack": "5.10.3",

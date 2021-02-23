@@ -17,8 +17,8 @@
   },
   "devDependencies": {
     "@babel/core": "7.13.1",
-    "@babel/eslint-parser": "7.13.0",
-    "@babel/runtime": "7.13.2",
+    "@babel/eslint-parser": "7.13.4",
+    "@babel/runtime": "7.13.4",
     "@vue/cli-plugin-babel": "4.5.11",
     "@vue/cli-service": "4.5.11",
     "babel-loader": "8.2.2",

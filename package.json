@@ -16,8 +16,8 @@
     "vuex": "3.6.2"
   },
   "devDependencies": {
-    "@babel/core": "7.13.13",
-    "@babel/eslint-parser": "7.13.10",
+    "@babel/core": "7.13.14",
+    "@babel/eslint-parser": "7.13.14",
     "@babel/runtime": "7.13.10",
     "@vue/cli-plugin-babel": "4.5.11",
     "@vue/cli-service": "4.5.11",

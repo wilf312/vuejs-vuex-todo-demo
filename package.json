@@ -42,7 +42,7 @@
     "html-webpack-plugin": "5.3.1",
     "http-proxy-middleware": "1.1.0",
     "json-loader": "0.5.7",
-    "mini-css-extract-plugin": "1.4.0",
+    "mini-css-extract-plugin": "1.4.1",
     "ora": "5.4.0",
     "shelljs": "0.8.4",
     "start-server-and-test": "1.12.1",

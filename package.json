@@ -23,7 +23,7 @@
     "@vue/cli-service": "4.5.11",
     "babel-loader": "8.2.2",
     "connect-history-api-fallback": "1.6.0",
-    "css-loader": "5.2.4",
+    "css-loader": "5.2.5",
     "cypress": "7.3.0",
     "eslint": "7.26.0",
     "eslint-config-standard": "16.0.2",

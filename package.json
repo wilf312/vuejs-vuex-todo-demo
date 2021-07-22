@@ -45,7 +45,7 @@
     "mini-css-extract-plugin": "2.1.0",
     "ora": "5.4.1",
     "shelljs": "0.8.4",
-    "start-server-and-test": "1.12.6",
+    "start-server-and-test": "1.13.0",
     "url-loader": "4.1.1",
     "vue-hot-reload-api": "2.3.4",
     "vue-html-loader": "1.2.4",

@@ -40,7 +40,7 @@
     "file-loader": "6.2.0",
     "function-bind": "1.1.1",
     "html-webpack-plugin": "5.5.0",
-    "http-proxy-middleware": "2.0.1",
+    "http-proxy-middleware": "2.0.2",
     "json-loader": "0.5.7",
     "mini-css-extract-plugin": "2.5.2",
     "ora": "5.4.1",

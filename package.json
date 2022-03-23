@@ -21,7 +21,7 @@
     "@babel/runtime": "7.17.8",
     "@vue/cli-plugin-babel": "4.5.11",
     "@vue/cli-service": "4.5.11",
-    "babel-loader": "8.2.3",
+    "babel-loader": "8.2.4",
     "connect-history-api-fallback": "1.6.0",
     "css-loader": "6.7.1",
     "cypress": "9.5.2",

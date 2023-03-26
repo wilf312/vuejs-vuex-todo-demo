@@ -12,7 +12,7 @@
     "lint": "eslint --ext .js,.vue src --fix"
   },
   "dependencies": {
-    "vue": "2.6.12",
+    "vue": "2.7.14",
     "vuex": "3.6.2"
   },
   "devDependencies": {
@@ -51,7 +51,7 @@
     "vue-html-loader": "1.2.4",
     "vue-loader": "15.10.1",
     "vue-style-loader": "4.1.2",
-    "vue-template-compiler": "2.6.12",
+    "vue-template-compiler": "2.7.14",
     "webpack": "5.76.3",
     "webpack-dev-middleware": "5.3.3",
     "webpack-hot-middleware": "2.25.3",

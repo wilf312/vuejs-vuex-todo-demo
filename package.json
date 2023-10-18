@@ -38,7 +38,7 @@
     "eventsource-polyfill": "0.9.6",
     "express": "4.18.2",
     "file-loader": "6.2.0",
-    "function-bind": "1.1.1",
+    "function-bind": "1.1.2",
     "html-webpack-plugin": "5.5.3",
     "http-proxy-middleware": "2.0.6",
     "json-loader": "0.5.7",

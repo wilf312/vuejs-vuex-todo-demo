@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "vue": "2.7.15",
-    "vuex": "3.6.2"
+    "vuex": "4.1.0"
   },
   "devDependencies": {
     "@babel/core": "7.23.6",
